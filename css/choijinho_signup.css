@@ -51,6 +51,7 @@
     border: 1px solid black;
     margin-top: 14px;
 }
+
 .navbar-toggler{
     background-color: #fff;
 }
@@ -118,6 +119,9 @@
     margin-bottom: 200px;
 }
 #tubular-shield{
+    z-index: 0 !important;
+}
+.carousel-control-prev, .carousel-control-next{
     z-index: 0 !important;
 }
 
