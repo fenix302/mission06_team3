@@ -29,9 +29,12 @@
 .mybox{
     background-color: rgba(0,0,0,.8);
 }
-.navbar{
+.navbar-nav{
 }
-.navbar-nav li{
+.navbar-collapse{
+    flex-grow: unset;
+}
+.myitem{
     margin-left: 70px;
 }
 .navbar-nav li a{
@@ -46,11 +49,21 @@
 }
 
 /* 드랍다운 메뉴 설정 변경 */
+.dropdown{
+    margin-left: 70px;
+}
 .dropdown-menu{
     background-color: rgba(0, 0, 0, 0.3) !important;
     border: 1px solid black;
-    margin-top: 14px;
+    margin-top: 14px !important;
 }
+.dropdown-menu li{
+    padding-top: 6px;
+}
+.dropdown-menu li a {
+    text-align: center;
+}
+
 
 .navbar-toggler{
     background-color: #fff;
