@@ -171,3 +171,8 @@ footer div p{
     border-radius: 5px;
 
 }
+
+/* 로그인 modal 기능 적용 부분 */
+.modal-body label{
+    padding-bottom: 5px;
+}
