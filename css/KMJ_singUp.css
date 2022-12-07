@@ -1,0 +1,297 @@
+/* 초기화 */
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   word-break: keep-all;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header {
+   height: 80px;
+   width: 100%;
+}
+
+@media (max-width: 900px) {
+   .header {
+      height: 120px;
+   }
+   h1{
+      width: 100%;
+      margin-left: 30%;
+   }
+
+   h1{
+      float: none;
+      margin: 0 auto;
+   }
+
+   nav{
+      float: none;
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 740px) {
+   .header {
+      height: 200px;
+   }
+   h1{
+      width: 100%;
+      margin-left: 30%;
+   }
+
+   nav > ul > li > a {
+      float: left;
+   }
+   
+}
+
+
+.container-fluid {
+   background-color: #fff;
+}
+
+#container {
+   max-width: 768px;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.q1,
+.q2,
+.q3 {
+   margin-left: 20px;
+}
+
+.q1{
+   margin-top: 60px;
+}
+
+/* 로고 */
+
+h1 > a > img {
+   width: 150px;
+   float: left;
+   padding-top: 15px;
+}
+
+
+
+/* 네비게이션 */
+#nav {
+   height: 80px;
+   max-width: 700px;
+   float: right;
+}
+
+#nav > ul > li {
+   float: left;
+   margin-left: 50px;
+   line-height: 80px;
+}
+
+#nav li a {
+   color: #cccccc;
+}
+
+#nav li a:hover {
+   color: #a60000;
+   font-weight: 700;
+}
+
+/* 배너 */
+
+#naming{
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 0px;
+}
+
+#banner {
+   clear: both;
+   width: 100%;
+   height: 300px;
+   background-image: url("../resources/minji/images/01.jpg");
+   background-size: cover;
+   background-position: 0%;
+}
+
+/* 컨텐츠 */
+input[type=radio] {
+   accent-color : #A60000;
+}
+
+input[type=checkbox] {
+   accent-color : #A60000;
+}
+
+input {
+   width: 400px;
+   height: 50px;
+   margin-top: 10px;
+   padding-left: 10px;
+}
+
+#gender {
+   width: 15px;
+   height: 15px;
+}
+
+#checkbox {
+   width: 15px;
+   height: 15px;
+   margin-right: 10px;
+}
+
+#Calendar{
+   width: 390px;
+   padding-right: 10px;
+}
+
+#color{
+   width: 410px;
+   padding: 0%;
+}
+
+#sample6_postcode{
+   width: 100px;
+}
+
+#found{
+   width: 100px;
+   height: 50px;
+   padding: 2px 0px 2px 0px;
+   margin: 0px 0px 0px 10px;
+   border: none;
+   background-color: #A60000;
+   color: #fff;
+   font-weight: 500;
+}
+
+#main {
+   max-width: 460px;
+   min-width: 250px;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+/* 이메일 */
+
+#email1{
+   width: 200px;
+   margin-left: 5px;
+}
+#email2{
+   margin-right: 5px;
+   width: 170px; 
+   height: 50px;
+   padding-left: 10px;
+   font-family: inherit;  
+   border-radius: 0px; 
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;
+   margin-right: 5px;
+}
+
+/* 전화번호 */
+#tel{
+   margin-right: 5px;
+   width: 110px; 
+   height: 50px;
+   padding-left: 10px;
+   font-family: inherit;  
+   border-radius: 0px; 
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;
+   margin-top: 10px;
+}
+
+#tel1, #tel2{
+   width: 115px; 
+   height: 50px;
+}
+#tel1{
+   margin: 0px 5px 0px 5px;
+}
+
+#tel2{
+   margin: 0px 0px 0px 5px;
+}
+
+.box {
+   max-width: 460px;
+   margin-bottom: 50px;
+}
+
+textarea {
+   width: 390px;
+   height: 50px;
+   resize: none;
+   padding: 10px 10px 10px 10px;
+   margin-top: 10px;
+}
+
+
+/* 하단 버튼 */
+.bt1{
+   width: 100px;
+   height: 50px;
+   margin: 0 auto;
+   border: none;
+   background-color: #A60000;
+   font-size: 14pt;
+   font-weight: 700;
+   color: #fff;
+   margin-top: 10px;
+}
+
+.bt2{
+   width: 410px;
+   height: 50px;
+   margin: 0 auto;
+   border: none;
+   background-color: #A60000;
+   font-size: 14pt;
+   font-weight: 700;
+   color: #fff;
+   margin: 40px 0px 80px 20px;
+}
+
+/* 푸터 */
+footer {
+   height: auto;
+   background-color: rgb(58, 58, 61) !important;
+   clear: both;
+}
+
+#word3 {
+   color: darkgray;
+   position: relative;
+}
+
+#word4 {
+   float: right;
+   margin-top: 40px;
+   font-size: 14px;
+   font-weight: 100;
+}
+
+h5 {
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.in3 {
+   margin: 0 auto;
+   margin-right: 80px;
+   padding: 40px 100px 40px 0px;
+}
+
+#copy > p {
+   font-size: 14px;
+   font-weight: 100;
+}
