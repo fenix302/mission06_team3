@@ -1,0 +1,216 @@
+/* 초기화 */
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style: none;
+   text-decoration: none;
+   word-break: keep-all;
+}
+
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 전체 */
+#wrap {
+   width: 100%;
+}
+
+/* 헤더 */
+header {
+   width: 100%;
+   height: 100px;
+   background-color: #0d173c;
+}
+
+#head {
+   width: 1440px;
+   margin: 0 auto;
+}
+
+/* 로고 */
+#logo > h1 > a > img {
+   height: 50px;
+   float: left;
+   margin-top: 25px;
+}
+
+/* 네비게이션 */
+nav {
+   height: 100px;
+   max-width: 700px;
+   float: right;
+}
+
+nav > ul > li {
+   float: left;
+   margin-left: 80px;
+   line-height: 100px;
+}
+
+nav li a {
+   color: #ccc;
+   font-weight: 400;
+}
+
+nav li a:hover {
+   color: #fd0065;
+}
+
+/* 메인배너 */
+#banner {
+   width: 100%;
+   height: 838px;
+   position: relative;
+   background-color: #fff;
+}
+
+.mov > video {
+   max-width: 1533px;
+   height: 838px;
+   float: left;
+}
+
+.textbox {
+   width: 610px;
+   height: 310px;
+   position: absolute;
+   left: 60%;
+   top: 352px;
+   padding: 40px;
+   background-image: url(../resources/Team3/images/mission5.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* 컨텐츠 */
+#con_wrap {
+   clear: both;
+   max-width: 1440px;
+   margin: 0 auto;
+   margin-top: 160px;
+}
+
+.con_announce {
+   max-width: 1440px;
+   text-align: center;
+   margin-bottom: 120px;
+}
+
+/* 컨텐츠 */
+.con {
+   max-width: 1440px;
+   height: 640px;
+   margin-bottom: 100px;
+}
+
+.con_pic {
+   width: 534px;
+   height: 640px;
+}
+
+.con_text {
+   width: 480px;
+   height: 290px;
+}
+
+.logo_per > img {
+   width: 50px;
+}
+
+/* 진호님 */
+.CJH > .con_pic {
+   float: left;
+   margin-right: 30px;
+   background-image: url(../resources/Team3/images/image1_CJH.JPG);
+   background-position: center;
+   background-size: cover;
+}
+
+.CJH > .CJH_text {
+   float: left;
+}
+
+/* 민지님 */
+.KMJ > .con_pic {
+   float: right;
+   margin: 0px 126px 0px 30px;
+   background-image: url(../resources/Team3/images/02.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.KMJ > .KMJ_text {
+   float: right;
+   text-align: right;
+}
+
+/* 재헌님 */
+.LJH > .con_pic {
+   float: right;
+   margin-right: 30px;
+   background-image: url(../resources/Jaeheon/images/member1.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.LJH > .LJH_text {
+   float: right;
+   margin-right: 80px;
+}
+
+/* 예진님 */
+.SYJ > .con_pic {
+   float: left;
+   margin-left: 30px;
+   background-image: url(../resources/Team3/images/04.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.SYJ > .SYJ_text {
+   float: left;
+   text-align: right;
+   margin-left: 200px;
+}
+
+/* 도현님 */
+.LDH > .con_pic {
+   float: left;
+   margin: 0px 30px 0px 146px;
+   background-image: url(../resources/Team3/images/ldh_image.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.LDH > .LDH_text {
+   float: left;
+}
+
+/* 폰트 */
+
+h2 {
+   font-size: 28px;
+   font-weight: 700;
+   color: #0d173c;
+}
+
+h3 {
+   font-size: 24px;
+   margin-bottom: 20px;
+   color: #fd0065;
+   font-weight: 700;
+}
+
+h4 {
+   font-weight: 300;
+   color: #5e6b7a;
+   line-height: 1.4;
+}
+
+.made {
+   color: #0d173c;
+   font-weight: 500;
+   font-size: 18px;
+}
