@@ -13,6 +13,7 @@
     <script src="../javascript/jquery.tubular.1.0.js"></script>
     <script src="../javascript/leejaeheon_signup.js"></script>
     <script src="https://kit.fontawesome.com/76c37157d1.js" crossorigin="anonymous"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
     <header>
@@ -77,9 +78,21 @@
           <input type="text" class="form-control" id="floatingName" maxlength="20" placeholder="비밀번호 입력" title="비밀번호를 입력 해주세요!">
           <label for="floatingName">이름</label>
         </div>
-        <div class="form-floating form-center">
+        <div class="form-floating form-center mb-4">
           <input type="date" class="form-control" id="floatingName" maxlength="20" placeholder="비밀번호 입력" title="비밀번호를 입력 해주세요!">
           <label for="floatingName">생년월일</label>
+        </div>
+        <div class="form-floating form-center">
+          <input type="text" class="form-control-50" id="sample4_postcode" placeholder="우편번호">
+          <input type="button" class="mb-4" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+          <input type="text" class="form-control-180px" id="sample4_roadAddress" placeholder="도로명주소">
+          <input type="text" class="form-control-180px" id="sample4_jibunAddress" placeholder="지번주소">
+          <span id="guide" style="color:#999;display:none"></span>
+          <input type="text" class="form-control-180px" id="sample4_detailAddress" placeholder="상세주소">
+          <input type="text" class="form-control-180px" id="sample4_extraAddress" placeholder="참고항목">
+        </div>
+        <div class="form-floating form-center">
+          
         </div>
       </div>
     </div>
