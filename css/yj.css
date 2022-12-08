@@ -1,0 +1,111 @@
+
+
+        
+    
+	    body { background-color: #dadbdb; }
+        button {font-size:10pt; padding:25px 30px}
+        
+        #pwp { font-size:10pt;
+            width: 100px;
+            height: 75px;
+            padding:25px 30px;
+
+
+        }
+
+        legend {
+            margin-top: 100px;
+            font-weight: bold;
+            font-size: 25pt;
+            color: rgb(54, 9, 72);
+           text-align: center;}
+
+        /* .container{
+            width: 600px;
+            margin: 0 auto;
+
+                } */
+                
+        ul{
+            list-style-type: none;
+        }
+        fieldset{
+            width: 100px; 
+            margin: 0 auto;
+            margin-left: 20%;
+        }
+        
+        
+        ul li{
+            margin-bottom: 100px;
+        }
+
+        footer { 
+        display: block;
+        margin-bottom: 10px;
+        margin-inline: 10px;
+        text-align: center;
+        }
+        
+  
+    
+        /* input{ height: auto; line-height: normal; padding: 1em 2.5em;} */
+        input{/* Box */
+        height: 51px;
+        width: 460px;
+        border: 1px solid rgb(218, 218, 218);
+        border-top: 1px solid rgb(218, 218, 218);
+        border-right: 1px solid rgb(218, 218, 218);
+        border-bottom: 1px solid rgb(218, 218, 218);
+        border-left: 1px solid rgb(218, 218, 218);
+        margin: 0px;
+        padding: 10px 110px 10px 14px;
+        max-height: none;
+        min-height: 0px;
+        max-width: none;
+        min-width: 0px;}
+        
+        /* Positioning */
+        label{
+        position: static;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        float: none;
+        display: inline;
+        clear: none;
+        z-index: auto;
+        font-size: 16pt;
+
+        
+        }
+
+        div{ text-align: left;
+        }
+       
+        /* input[type=text] {
+        width: 300;
+        height: 50;
+        font-size: 15;
+        } */
+
+        /* Box */
+        section{
+        padding-right: 230px;
+        padding-left: 200px;
+        margin: 0px;
+        max-height: none;
+        min-height: 0px;
+        max-width: none;
+        min-width: 0px;
+        margin-left: 35%;
+        }
+
+        .end{text-align: center; }
+
+
+
+      
+
+    
