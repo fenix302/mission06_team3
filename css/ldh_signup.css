@@ -17,14 +17,33 @@
 
 a{
     text-decoration: none;
+    color: black;
+}
+a:hover{
+    color : black;
 }
 
 /* 헤더  */
 .navigation{
-    width: 80%;
+    position: absolute;
+    width: 85%;
     height: 80px;
     position: relative;
 }
+
+.navbar-brand{
+    padding-left: 15px;
+    margin-top: 17px;
+    font-size: 30px;
+    font-style: italic;
+}
+.nav-link{ 
+    position: relative;
+    margin-left: 18px;
+    margin-top: 14px;
+    font-size: 20px;
+}
+
 
 h1{
     font-size: 44px;
@@ -38,3 +57,65 @@ h1 > span{
 }
 
 
+
+span#membership{
+    margin-top: 15px;
+    font-size: 15px;
+}
+span.sign{
+    margin-left: 20px;
+}
+
+.signup{
+    margin-top: 100px;
+    width: 40%;
+    height: 1500px;
+}
+.gender{
+    margin-top: 25px;
+}
+.favoritecolor{
+    margin-top: 25px;
+}
+.form-control-color{
+    width: 40%;
+}
+.email{
+    margin-top: 25px;
+}
+.purpose{
+    margin-top: 25px;
+}
+.form-floating{
+    margin-top: 20px;
+}
+#sample4_postcode{
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#sample4_roadAddress{
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+#sample4_jibunAddress{
+    width:300px;
+}
+#sample4_detailAddress{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+#sample4_extraAddress{
+    width: 300px;
+}
+footer{
+    height: 150px;
+    font-size: 14px;
+    background-color: black ;
+    text-align: center;
+    padding-top: 50px;
+    color: #f3f3f3;
+}
