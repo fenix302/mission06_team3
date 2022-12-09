@@ -82,7 +82,6 @@
                             <input type="radio" id="gender" name="gender"> 지정안함 <br>
                         </span>
 
-                        <!-- 선택여러개됨 수정해야함 -->
                     </div>
 
                     <p id="naming">본인 확인 이메일</p>
@@ -115,7 +114,7 @@
                         -
                         <input type="tel" id="tel2" maxlength="4" placeholder="4자리">
                     </div>
-                    <!-- 전화번호(010-000-0000형식 적용, selcet,option.seclet 010적용 그 뒤에는 패턴 속성 적용) -->
+         
 
                     <p id="naming">주소</p>
                     <div class="box">
@@ -160,6 +159,46 @@
         
             </div>
         </div>
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                var addr = ''; 
+                var extraAddr = ''; 
+
+                if (data.userSelectedType === 'R') { 
+                    addr = data.roadAddress;
+                } else { 
+                    addr = data.jibunAddress;
+                }
+
+                if(data.userSelectedType === 'R'){
+                
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                   
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                  
+                    document.getElementById("sample6_extraAddress").value = extraAddr;
+                
+                } else {
+                    document.getElementById("sample6_extraAddress").value = '';
+                }
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = addr;
+                document.getElementById("sample6_detailAddress").focus();
+            }
+        }).open();
+    }
+</script>    
 
          <footer class="container-fluid">
             <div class="in container-xl">

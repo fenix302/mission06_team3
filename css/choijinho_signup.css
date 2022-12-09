@@ -29,8 +29,7 @@
 .mybox{
     background-color: rgba(0,0,0,.8);
 }
-.navbar-nav{
-}
+
 .navbar-collapse{
     flex-grow: unset;
 }
@@ -138,7 +137,6 @@
     z-index: 0 !important;
 }
 
-/* 추가 작성 필요한 곳 */
 .ontop2 {
     color:#fff;
     font-size:2em;
@@ -175,4 +173,18 @@ footer div p{
 /* 로그인 modal 기능 적용 부분 */
 .modal-body label{
     padding-bottom: 5px;
+}
+
+/* 다음주소 api적용부분 */
+.row > div{
+    margin-top: 5px !important;
+}
+.row > div + div{
+    padding-left: 0;
+}
+.my-label{
+    padding: 8px 20px !important;
+}
+.form-floating > label{
+    padding: 8px 10px ;
 }
