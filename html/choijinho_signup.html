@@ -218,6 +218,7 @@
             </div>
         </div>
     </div>
+    <!-- 회원가입 페이지 -->
     <form class="modal fade needs-validation was-validated" id="exampleModalToggle2" aria-labelledby="exampleModalToggleLabel2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" style="display: none;" novalidate>
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -328,7 +329,6 @@
                                     } else {
                                         document.getElementById("sample2_extraAddress").value = '';
                                     }
-
                                     // 우편번호와 주소 정보를 해당 필드에 넣는다.
                                     document.getElementById('sample2_postcode').value = data.zonecode;
                                     document.getElementById("sample2_address").value = addr;
@@ -342,7 +342,6 @@
                                 width : '100%',
                                 height : '100%',
                                 maxSuggestItems : 5
-
                                 
                             }).embed(element_layer);
 
@@ -351,9 +350,7 @@
 
                             // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
                             initLayerPosition();
-                            
                         }
-
                         // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
                         // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
                         // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
