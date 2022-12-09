@@ -119,13 +119,18 @@ i{
     margin: 0 auto;
 }
 
+.click:hover{
+    background-color: blue;
+    color: white;
+}
+
 footer{
     position: relative;
     z-index: 99;
     margin: 0 auto;
     margin-top: 30px;
     width: 80vw;
-    height: 110px;
+    height: 100px;
     background-color: white;
 }
 
