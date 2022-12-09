@@ -17,11 +17,13 @@
         <div class="navigation">
             <nav class="navbar navbar-expand-lg " >
                 <div class="container-fluid">
+                <!-- 로고  -->
                 <img src="../resources/dohyun/images/dohyun.svg" width="50" height="50" alt="">
                 <a class="navbar-brand" href="#">DHL</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- 네비게이션 바 -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav justify-content-center">
                     <li class="nav-item dropdown">
@@ -63,7 +65,7 @@
                         </span>
                         <span class="sign">
                             <img src="../resources/dohyun/images/signup.ico" width="25" height="25">
-                            <a href="#">회원가입</a>
+                            <a href="/html/ldh_signup.html">회원가입</a>
                         </span>    
                     </span>
                 </div>
@@ -71,38 +73,47 @@
             </nav>
         </div>
     </header>
-    <div class="signimg">
-        <img src="../resources/dohyun/images/signup.jpg" height="350" width="100%">
-    </div>
+    <!-- 헤더 끝 -->
+    <!-- 회원가입 이미지 -->
+        <div class="signimg">
+            <img src="../resources/dohyun/images/signup.jpg" height="350" width="100%">
+        </div>
+    </div>    
     <h1>회원가입 <br>
         <span>주식회사 DHL 입니다.</span>
     </h1>
-
+    <!-- 회원가입 기능 -->
+    <!-- 아이디 -->
     <div class="signup">
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">아이디</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" minlength="8" maxlength="16">
             <div id="emailHelp" class="form-text">8~16자로 입력해 주세요.</div>
         </div>
+        <!-- 비밀번호 -->
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">비밀번호</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" minlength="8" maxlength="20">
             <div id="emailHelp" class="form-text">8~20자로 입력해 주세요.</div>
         </div>
+        <!-- 비밀번호 재입력 -->
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">비밀번호 재입력</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" minlength="8" maxlength="20">
             <div id="emailHelp" class="form-text">동일한 비밀번호를 입력해 주세요.</div>
         </div>
+        <!-- 이름 -->
         <div class="mb-4">
             <label for="exampleInputEmail1" class="form-label">이름</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
+        <!-- 생년월일 -->
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">생년월일</label>
             <input type="date" class="form-control" id="birthday" name="birthday" placeholder="연도-월-일">
         </div>
-        <div class="email">이메일
+        <!-- 이메일 -->
+        <div class="email"> 이메일
             <div class="row g-2"> 
                 <div class="col-md">
                 <div class="form-floating">
@@ -123,6 +134,35 @@
                 </div>
             </div>
         </div>
+        <!-- 전화번호 -->
+        <div class="pnum"> 전화번호
+            <div class="row g-2"> 
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid">
+                        <option selected></option>
+                        <option value="1">010</option>
+                        <option value="2">011</option>
+                        </select>
+                        <label for="floatingSelectGrid">선택</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="tell" class="form-control" minlength="3"
+                        maxlength="4" id="floatingInputGrid"  >
+                        <label for="floatingInputGrid">3~4자리 입력해 주세요</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="floatingInputGrid" minlength="4" maxlength="4" >
+                        <label for="floatingInputGrid">4자리 입력해 주세요</label>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+        <!-- 성별 -->
         <div class="gender">
             성별
             <div class="form-check">
@@ -137,6 +177,7 @@
                   여성
                 </label>
             </div>
+            <!-- 색상 선택 -->
             <div class="favoritecolor">
                 <label for="exampleColorInput" class="form-label">선호하는 색상</label>
                 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
@@ -146,6 +187,7 @@
             <label for="exampleInputEmail1" class="form-label">가입목적</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
+        <!-- 주소 api 들어갈 자리 -->
         <div class="form-floating">
             <div class="address">
             <p>주소</p>
@@ -158,10 +200,12 @@
                 <input type="text" id="sample4_extraAddress" placeholder="참고항목">
             </div>
         </div>
+        <!-- 회원가입 버튼 -->
         <div class="form-floating">
             <input type="submit" class="form-control" value="회원가입">
         </div>
     </div>
+    <!-- 푸터 영역 -->
     <footer>
         <p>주식회사 DHL, 주소 : 서울특별시 금천구 가산디지털2로 83 신관M1, 대표 이도현 <br>
         상담/문의 : 010-4058-2189 / 02-892-3325, EMAIL : fasfaff@naver.com, 사업자등록번호 : 521-12-49547 <br>
